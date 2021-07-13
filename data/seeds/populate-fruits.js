@@ -1,5 +1,5 @@
 exports.seed = function (knex) {
-  // Deletes ALL existing entries
+  // Deletes ALL existing entries and resets the primary keys
   return knex('fruits').truncate()
     .then(function () {
       // Inserts seed entries
