@@ -1,3 +1,3 @@
 const configurations = require('../knexfile')
 
-const environment = 
+const environment = process.env.NODE_ENV || 'development'
