@@ -1,5 +1,7 @@
 exports.up = function(knex) {
-  return knex.schema.createTable('fruits', table => {})
+  return knex.schema.createTable('fruits', table => {
+    table.in
+  })
 };
 
 exports.down = function(knex) {
