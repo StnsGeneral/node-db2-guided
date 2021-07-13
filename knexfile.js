@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { // which one is used depends on value of an env variable (NODE_ENV ?)
   development: {
     client: 'sqlite3',
     connection: {
