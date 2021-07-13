@@ -2,7 +2,7 @@ module.exports = { // which one is used depends on value of an env variable (NOD
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './data/ladygaga.db3', // with other SQLs it'd be a URL instead of filename
+      filename: './data/produce.db3', // with other SQLs it'd be a URL instead of filename
     },
     useNullAsDefault: true, // only required in sqlite
     migrations: {
