@@ -5,7 +5,11 @@
     "scripts": {
         "start": "node index.js",
         "server": "nodemon index.js",
-        "ketchup": "git fetch && git reset --hard origin/lecture"
+        "ketchup": "git fetch && git reset --hard origin/lecture",
+        "up": "knex mgigrate:up",
+        "latest": "knex migrate:latest",
+        "down": "knex migrate:down",
+        "rollback": "knex "
     },
     "repository": {
         "type": "git",
