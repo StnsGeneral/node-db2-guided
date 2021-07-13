@@ -4,7 +4,10 @@ exports.up = function(knex) {
     table.text('fruit_name', 128) // column of data type 'text' named 'fruit_name'
     table.decimal('avg_weight_oz') // column of data type 'decimal' named 'avg_weight_oz'
     table.boolean('delicious')
-  });
+  })
+    .createTable('users', table => {
+      table.increments('user_id')
+    })
 };
 
 exports.down = function(knex) {
