@@ -9,7 +9,7 @@ module.exports = { // which one is used depends on value of an env variable (NOD
       directory: './data/migrations',
     },
     seeds: {
-      directory: './data/seeds'
+      directory: './data/seeds',
     },
   },
   production: {},
