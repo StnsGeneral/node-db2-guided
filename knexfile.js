@@ -1,7 +1,11 @@
 module.exports = {
   development: {
     client: 'sqlite3',
-    connection: 'fa;lksjfaldk;fjaksl;fjasdlkfjdakls;fjdasklfja'
+    connection: {
+      filename: './data/produce.db3',
+    },
+    useNullAsDefault: true,
+
   },
   production: {},
   staging: {},
