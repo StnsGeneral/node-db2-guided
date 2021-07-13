@@ -1,6 +1,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('fruits', table => {
     table.increments() // shortcut for creating an 'id' column that is the primary key
+    table.text('fruit_name', 128)
   })
 };
 
